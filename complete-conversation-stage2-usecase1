@@ -1,0 +1,4 @@
+query = "Keep it short. What where the sequence of events that led to the incident at SecureTech and when did they happen?"
+rag_chain.invoke(query)
+
+'The sequence of events that led to the incident at SecureTech was as follows: \n1. John from the IT department sent an email to Alex, informing him about a security vulnerability and requesting immediate account verification. \n2. Alex expressed concerns about the legitimacy of the request and suggested an alternative verification method. \n3. John scheduled a meeting with Alex to address his concerns and guide him through the verification process. \nThese events happened on December 6, 2023.'
