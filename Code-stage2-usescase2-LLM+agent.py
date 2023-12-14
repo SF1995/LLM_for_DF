@@ -26,9 +26,9 @@ import re, time, os
 # In[9]:
 
 
-client = OpenAI(api_key='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')
-os.environ["GOOGLE_CSE_ID"] = "5030ba5584ab64d43"
-os.environ["GOOGLE_API_KEY"] = "AIzaSyAnTlPesFWcoD_iVLW_QG7NbQJJ6I5G1rM"
+client = OpenAI(api_key='your open ai api key')
+os.environ["GOOGLE_CSE_ID"] = "your google cse id"
+os.environ["GOOGLE_API_KEY"] = "your google api key"
 
 
 # In[10]:
