@@ -7,13 +7,13 @@
 get_ipython().system('pip install langchain openai weaviate-client')
 
 
-# In[6]:
+# In[2]:
 
 
 pip install python-dotenv
 
 
-# In[9]:
+# In[3]:
 
 
 import os
@@ -21,14 +21,14 @@ import os
 os.environ['OPENAI_API_KEY'] = 'your open ai key'
 
 
-# In[10]:
+# In[4]:
 
 
 import dotenv
 dotenv.load_dotenv()
 
 
-# In[85]:
+# In[5]:
 
 
 import requests
@@ -43,7 +43,7 @@ loader = TextLoader('./e-mails.txt')
 documents = loader.load()
 
 
-# In[86]:
+# In[6]:
 
 
 from langchain.text_splitter import CharacterTextSplitter
@@ -51,7 +51,7 @@ text_splitter = CharacterTextSplitter(chunk_size=4000, chunk_overlap=50)
 chunks = text_splitter.split_documents(documents)
 
 
-# In[87]:
+# In[7]:
 
 
 from langchain.embeddings import OpenAIEmbeddings
@@ -71,13 +71,13 @@ vectorstore = Weaviate.from_documents(
 )
 
 
-# In[88]:
+# In[8]:
 
 
 retriever = vectorstore.as_retriever()
 
 
-# In[89]:
+# In[9]:
 
 
 from langchain.prompts import ChatPromptTemplate
@@ -95,7 +95,7 @@ prompt = ChatPromptTemplate.from_template(template)
 print(prompt)
 
 
-# In[93]:
+# In[10]:
 
 
 from langchain.chat_models import ChatOpenAI
@@ -113,10 +113,3 @@ rag_chain = (
 
 query = "Keep it short. What where the sequence of events that led to the incident at SecureTech and when did they happen?"
 rag_chain.invoke(query)
-
-
-# In[ ]:
-
-
-
-
