@@ -1,0 +1,10 @@
+Prompt:
+Please act like a digital forensics investigator that is tasked to collect al potential digital evidence after an internet of things DDOS cyber attack. Provide an prioritised list of potential devices in a large organisation that could be related to the attack. Also add a very short reasoning for each device type in brackets after the device type explaining why you added it to the list.
+
+Answer:
+As a digital forensics investigator, I would collect all potential digital evidence after an internet of things DDOS cyber attack by following a prioritized list of potential devices in a large organization that could be related to the attack. Here is the list I would use:
+
+IoT devices (such as smart cameras, thermostats, printers, etc.) that are connected to the organization’s network and have internet access. These devices are the most likely sources of the attack, as they can be easily hijacked and made part of an IoT botnet. I would examine the devices for any signs of malware infection, unauthorized access, or abnormal network activity.
+Routers and switches that are responsible for routing and forwarding the network traffic within the organization. These devices can also be compromised and used to launch or amplify the attack, as well as to hide the origin of the malicious traffic. I would analyze the device configurations, logs, and traffic patterns for any anomalies or evidence of tampering.
+Servers and workstations that host the organization’s applications and data. These devices can be targeted by the attack to disrupt the organization’s operations, or they can be used as intermediaries to relay the attack to other targets. I would check the devices for any signs of intrusion, data breach, or resource exhaustion.
+Mobile devices (such as smartphones, tablets, laptops, etc.) that belong to the organization’s employees or visitors. These devices can also be infected and used to participate in the attack, either knowingly or unknowingly. I would inspect the devices for any suspicious apps, files, or connections.
