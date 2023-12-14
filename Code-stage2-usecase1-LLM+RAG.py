@@ -18,7 +18,7 @@ pip install python-dotenv
 
 import os
 
-os.environ['OPENAI_API_KEY'] = ''
+os.environ['OPENAI_API_KEY'] = 'your open ai key'
 
 
 # In[10]:
